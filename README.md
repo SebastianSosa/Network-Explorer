@@ -1,5 +1,6 @@
 #  Network-Explorer
 Network explorer (NetExplorer) is a free open R package to visualize and explore networks based on d3js library.NetExplorer brings:
+
       1. Graphical user interface
       2. Circular, linear, multilayer and force Layout
       3. Network live exploration
