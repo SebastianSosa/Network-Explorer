@@ -1,0 +1,12 @@
+Package: NetExplorer
+Type: Package
+Title: Network explorer (NetExplorer)
+Version: 0.0.1
+Authors@R:c(person("Sosa", "Sebastian", email = "s.sosa@live.fr", role = c("aut", "cre")))
+Description: Network explorer is a package to visualize and explore networks.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0)
+LazyData: true
+RoxygenNote: 7.1.2
+
