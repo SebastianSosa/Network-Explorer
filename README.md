@@ -1,5 +1,5 @@
 #  Network-Explorer
-Network explorer (NetExplorer) is a free open R package to visualize and explore networks based on d3jd library.
+Network explorer (NetExplorer) is a free open R package to visualize and explore networks based on d3js library.
 
 <img src="https://github.com/SebastianSosa/Network-Explorer/blob/main/inst/www/logo.jpg" alt="alt text" width="20%" height="20%"> 
 
