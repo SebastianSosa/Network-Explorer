@@ -1,0 +1,16 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+desktop.ini
+^\.travis\.yml$
+^doc$
+^Meta$
+^yml$
+^Rhistory$
+README.md
+^.*\.git$
+^.gitignore$
+^.RData$
+desktop.files.json
+^.desktop.files.json
+LICENSE
+Example.png
