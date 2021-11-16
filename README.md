@@ -1,5 +1,10 @@
 #  Network-Explorer
-Network explorer (NetExplorer) is a free open R package to visualize and explore networks based on d3jd library.
+Network explorer (NetExplorer) is a free open R package to visualize and explore networks based on d3js library.NetExplorer brings:
+
+      1. Graphical user interface
+      2. Circular, linear, multilayer and force Layout
+      3. Network live exploration
+      4. SVG exportation
 
 <img src="https://github.com/SebastianSosa/Network-Explorer/blob/main/inst/www/logo.jpg" alt="alt text" width="20%" height="20%"> 
 
@@ -15,3 +20,6 @@ Network explorer (NetExplorer) is a free open R package to visualize and explore
     3. Install R package devtool with the following command: install.packages("devtools")
     
     4. Install ANTs with the following command: devtools::install_github("SebastianSosa/Network-Explorer")
+
+ # Example
+  <img src="https://github.com/SebastianSosa/Network-Explorer/blob/main/Example.png" alt="alt text" width="100%" height="100%"> 
