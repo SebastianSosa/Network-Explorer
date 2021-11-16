@@ -109,6 +109,26 @@ a.dispatchEvent(e);
         document.getElementById("param layer 4").style.display = "none";
 
 
+        document.getElementById("param link 0").style.visibility = "visible";
+        document.getElementById("param link 0").style.display = "block";
+
+        document.getElementById("param link 0.1").style.visibility = "visible";
+        document.getElementById("param link 0.1").style.display = "block";
+
+        document.getElementById("param link 1").style.visibility = "hidden";
+        document.getElementById("param link 1").style.display = "none";
+
+        document.getElementById("param link 2").style.visibility = "hidden";
+        document.getElementById("param link 2").style.display = "none";
+
+        document.getElementById("param link 3").style.visibility = "hidden";
+        document.getElementById("param link 3").style.display = "none";
+
+        document.getElementById("param link 4").style.visibility = "hidden";
+        document.getElementById("param link 4").style.display = "none";
+
+
+
       }else{
         document.getElementById("param layer 0").style.visibility = 'hidden';
         document.getElementById("param layer 0").style.display = 'none';
@@ -127,6 +147,24 @@ a.dispatchEvent(e);
 
         document.getElementById("param layer 4").style.visibility = 'visible';
         document.getElementById("param layer 4").style.display = 'block';
+
+        document.getElementById("param link 0").style.visibility = 'hidden';
+        document.getElementById("param link 0").style.display = 'none';
+
+        document.getElementById("param link 0.1").style.visibility = 'hidden';
+        document.getElementById("param link 0.1").style.display = 'none';
+
+        document.getElementById("param link 1").style.visibility = 'visible';
+        document.getElementById("param link 1").style.display = 'block';
+
+        document.getElementById("param link 2").style.visibility = 'visible';
+        document.getElementById("param link 2").style.display = 'block';
+
+        document.getElementById("param link 3").style.visibility = 'visible';
+        document.getElementById("param link 3").style.display = 'block';
+
+        document.getElementById("param link 4").style.visibility = 'visible';
+        document.getElementById("param link 4").style.display = 'block';
       }
     })
  </script>
@@ -300,26 +338,68 @@ a.dispatchEvent(e);
         </li>
 
         <!--opacity-->
-        <li class="darkerli">
+        <li class="darkerli" id="param link 0">
           <i class="fa fa-lightbulb-o fa-lg"></i>
-          <span class="nav-text"  style="text-align: center;">Opacity</span>
+          <span class="nav-text" style="text-align: center;">Opacity</span>
         </li>
-        <li class="darkerli">
+        <li class="darkerli" id="param link 0.1">
           <a>
             <i class="fa fa-lightbulb-o fa-lg"></i>
-            <span class="nav-text"  style="text-align: center;">
+            <span class="nav-text" style="text-align: center;">
              <form>
                <div>
                  <span>0</span>
-                 <input id="sliderLOpacity" type="range" min="0" max="1" oninput="sliderLOpacityV.value=rangeInput.value" value="0.5" step="any"/>
+                 <input id="sliderLOpacity" type="range" min="0" max="1" oninput="sliderLOpacityV.value=rangeInput.value" value="0.5" step="any">
                  <span>1</span>
-                 <input id="sliderLOpacityV" type="number" value= "0.5" min="0" max="1" oninput="sliderLOpacity.value=sliderLOpacityV.value"
-                 style="border: 0; text-align: center; background-color: #ecebeb;"/>
+                 <input id="sliderLOpacityV" type="number" value="0.5" min="0" max="1" oninput="sliderLOpacity.value=sliderLOpacityV.value" style="border: 0px; text-align: center; background-color: rgb(236, 235, 235); --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial; --darkreader-inline-bgcolor:#ceccc7;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgcolor="">
                </div>
              </form>
             </span>
           </a>
         </li>
+
+
+        <!--Multilayer opacity-->
+        <li class="darkerli" id="param link 1" style="visibility: hidden; display: none;">
+          <i class="fa fa-lightbulb-o fa-lg"></i>
+          <span class="nav-text" style="text-align: center;">Intra-Layer opacity</span>
+        </li>
+        <li class="darkerli" id="param link 2" style="visibility: hidden; display: none;">
+          <a>
+            <i class="fa fa-lightbulb-o fa-lg"></i>
+            <span class="nav-text" style="text-align: center;">
+             <form>
+               <div>
+                 <span>0</span>
+                 <input id="sliderLOpacityM" type="range" min="0" max="1" oninput="sliderLOpacityMV.value=rangeInput.value" value="0.5" step="any">
+                 <span>1</span>
+                 <input id="sliderLOpacityMV" type="number" value="0.5" min="0" max="1" oninput="sliderLOpacityM.value=sliderLOpacityMV.value" style="border: 0px; text-align: center; background-color: rgb(236, 235, 235); --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial; --darkreader-inline-bgcolor:#ceccc7;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgcolor="">
+               </div>
+             </form>
+            </span>
+          </a>
+        </li>
+
+        <li class="darkerli" id="param link 3" style="visibility: hidden; display: none;">
+          <i class="fa fa-lightbulb-o fa-lg"></i>
+          <span class="nav-text" style="text-align: center;">Inter-layer opacity</span>
+        </li>
+        <li class="darkerli" id="param link 4" style="visibility: hidden; display: none;">
+          <a>
+            <i class="fa fa-lightbulb-o fa-lg"></i>
+            <span class="nav-text" style="text-align: center;">
+             <form>
+               <div>
+                 <span>0</span>
+                 <input id="sliderLOpacityM2" type="range" min="0" max="1" oninput="sliderLOpacityMV2.value=rangeInput.value" value="0.5" step="any">
+                 <span>1</span>
+                 <input id="sliderLOpacityMV2" type="number" value="0.5" min="0" max="1" oninput="sliderLOpacityM2.value=sliderLOpacityMV2.value" style="border: 0px; text-align: center; background-color: rgb(236, 235, 235); --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial; --darkreader-inline-bgcolor:#ceccc7;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgcolor="">
+               </div>
+             </form>
+            </span>
+          </a>
+        </li>
+
 
 
         <!--Link curves-->

@@ -295,6 +295,32 @@ var dist = 500
               selectedValue = this.value
               changeLOpacity(selectedValue)
     })
+        /*Links Multilayer Opacity------------------------------------------------------------------------*/
+      function changeLMOpacity(size) {
+         link.style('opacity', function(d) { return d.intralayer * size; })
+       }
+
+       d3.select("#sliderLOpacityM").on("change", function(d){
+                 selectedValue = this.value
+                 changeLMOpacity(selectedValue)
+       })
+       d3.select("#sliderLOpacityMV").on("input", function(d){
+               selectedValue = this.value
+               changeLMOpacity(selectedValue)
+     })
+
+     function changeLMOpacity2(size) {
+         link.style('opacity', function(d) { return d.interlayer * size; })
+       }
+
+       d3.select("#sliderLOpacityM2").on("change", function(d){
+                 selectedValue = this.value
+                 changeLMOpacity2(selectedValue)
+       })
+       d3.select("#sliderLOpacityMV2").on("input", function(d){
+               selectedValue = this.value
+               changeLMOpacity2(selectedValue)
+     })
       /*Links curves------------------------------------------------------------------------*/
       function changeLCurve(size) {
         if(size == 0){

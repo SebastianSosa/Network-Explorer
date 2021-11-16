@@ -349,11 +349,11 @@ vis.net <- function(df, m,
   # edglist convertion----------------------------
   edgl = mat.to.edgl(m)
   edgl = edgl[edgl$weight != 0,]
+
   if(link.opacity){
     edgl$lOpacity = (edgl$weight - min(edgl$weight))/(max(edgl$weight) - min(edgl$weight))
     edgl$lOpacity[which.min(edgl$lOpacity)] = 0.0001
   }else{edgl$lOpacity = 1}
-
 
   # Info storing---------------------------
   df = d[[1]]
@@ -380,6 +380,25 @@ vis.net <- function(df, m,
   colnames(tmp)[1] = "from"
   edgl = merge(edgl, tmp, by = "from", all.x = T)
   colnames(edgl)[5] = "colorL"
+
+  # Edgelist node layer information-------------
+  if(!is.null(layers)){
+    test1 = unlist(lapply( edgl$from , function(x,d){
+      d[d$id %in% x,]$layers
+    }, d = d[[1]]))
+    test2 = unlist(lapply( edgl$to , function(x,d){
+      d[d$id %in% x,]$layers
+    }, d = d[[1]]))
+    df[df$id %in% edgl$from,]$kinship
+    edgl$intralayer = test1 == test2
+    edgl$intralayer = as.integer(edgl$intralayer)
+    edgl$interlayer = ifelse( edgl$intralayer == 1, NaN, 1)
+    edgl$intralayer = ifelse( edgl$intralayer == 1, 1, NaN)
+
+  }else{
+    edgl$intralayer = edgl$interlayer = NaN
+  }
+
   # Exporting data to html file -----------------
   # Create a temporary directory
   tempdir <- paste(system.file(package = "NetExplorer"),"/","www", sep = "")
@@ -511,7 +530,9 @@ vis.net <- function(df, m,
         '\'','target','\'', noquote(':'),  '\'', edgl[a, 2],'\',',
         '\'','colorL','\'', noquote(':'),  '\'', edgl[a, 5],'\',',
         '\'','lOpacity','\'', noquote(':'),  edgl[a, 4],',',
-        '\'','weigth','\'', noquote(':'),  edgl[a, 3],
+        '\'','weigth','\'', noquote(':'),  edgl[a, 3],',',
+        '\'','intralayer','\'', noquote(':'),  edgl[a, 6],',',
+        '\'','interlayer','\'', noquote(':'),  edgl[a, 7],
         noquote('},'), '\n'), file = tmpFile, append = TRUE)
   }
   cat(paste0(noquote(']}'), '\n'), file = tmpFile, append = TRUE)
