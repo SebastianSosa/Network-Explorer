@@ -54,14 +54,14 @@ vis.net(
 \item{background}{a character indicating the background color.}
 }
 \value{
-Opens default web browser.
+Opens default web browser with the ploted network.
 }
 \description{
 Plots a network
 }
 \details{
-Opens default web browser and shows NetExplorer interface with the desired network.
-Further information and tutorial can be found in my videos https://www.s-sosa.com/
+Opens default web browser and shows 'NetExplorer' interface with the desired network.
+Further information and tutorial can be found in my video https://youtu.be/IcFTZWCTO_s/
 }
 \examples{
 vis.net(df,m,col.id = "id", col.size = "strength",
@@ -70,9 +70,6 @@ strokeCol = c('red', 'blue'), col.strokeCol = "kinship",
 col.stroke = "degree",
 col.shape =  "sex",shapes = c("circle", "triangle"),
 layers =  "kinship")
-}
-\seealso{
-https://www.s-sosa.com
 }
 \author{
 Sebastian Sosa

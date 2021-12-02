@@ -41,7 +41,13 @@ vis.net.format.att(
 
 \item{node.opacity}{a character or numeric vector indicating the column name or index of node opacity.}
 }
+\value{
+a data frame.
+}
 \description{
 specifies shapes according to a column in a data frame
+}
+\details{
+format a data frame with informations relative to vis.net function.
 }
 \keyword{internal}

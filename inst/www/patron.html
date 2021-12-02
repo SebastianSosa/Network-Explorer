@@ -14,49 +14,49 @@ a.download = 'download.svg';
 a.href = 'data:image/svg+xml;base64,' + base64doc;
 a.dispatchEvent(e);
     }
-  </script>    
+  </script>
 
 <script src='d3.min.js'></script>
 <script src='d3-tip.js'></script>
 
 
-           
+
 
 </head>
 <body>
-  <nav class="main-menu">  
+  <nav class="main-menu">
     <div class="settings">
-      <a href="https://www.s-sosa.com/">  
-        <img src="logo.jpg" title="Visit s-sosa.com" style="width: 100%; height: 100%;"/> 
-      </a> 
-    </div>             
+      <a href="https://www.s-sosa.com/">
+        <img src="logo.jpg" title="Visit s-sosa.com" style="width: 100%; height: 100%;"/>
+      </a>
+    </div>
 
-    <ul> 
+    <ul>
 <!--Layouts-->
-<li class="darkerlishadow">                        
+<li class="darkerlishadow">
   <i class="fa fa-lightbulb-o fa-lg"></i>
-  <span class="nav-text"><b>Layout</b></span>            
+  <span class="nav-text"><b>Layout</b></span>
 </li>
 
 
 <!--Type-->
 <li class="darkerli">
   <i class="fa fa-lightbulb-o fa-lg"></i>
-  <span class="nav-text"  style="text-align: center;">Type</span>            
+  <span class="nav-text"  style="text-align: center;">Type</span>
 </li>
 <li class="darkerli">
   <a>
     <i class="fa fa-lightbulb-o fa-lg"></i>
     <span class="nav-text"  style="text-align: center;">
       <div id="dataviz_builtWithD3"></div>
-    </span>     
+    </span>
   </a>
-</li>  
+</li>
 
 <!--Background-->
 <li class="darkerli">
   <i class="fa fa-lightbulb-o fa-lg"></i>
-  <span class="nav-text"  style="text-align: center;">Background color</span>            
+  <span class="nav-text"  style="text-align: center;">Background color</span>
 </li>
 <li class="darkerli">
   <a>
@@ -78,10 +78,10 @@ a.dispatchEvent(e);
   document.body.style.backgroundColor =  event.target.value;
   }
                 </script>
-    </span>     
+    </span>
   </a>
-</li>  
-        
+</li>
+
   <!--space-->
   <!--space default layer-->
   <script type="text/javascript">
@@ -96,21 +96,21 @@ a.dispatchEvent(e);
 
         document.getElementById("param layer 2").style.visibility = "hidden";
         document.getElementById("param layer 2").style.display = "none";
-        
+
       }else{
         document.getElementById("param layer 1").style.visibility = 'visible';
         document.getElementById("param layer 1").style.display = 'block';
 
         document.getElementById("param layer 2").style.visibility = 'visible';
         document.getElementById("param layer 2").style.display = 'block';
-      } 
+      }
     })
  </script>
 
 
-  <li class="darkerli"  id = "myspan">                        
+  <li class="darkerli"  id = "myspan">
     <i class="fa fa-lightbulb-o fa-lg"></i>
-    <span class="nav-text"  style="text-align: center; visibility: visible" >Space</span>            
+    <span class="nav-text"  style="text-align: center; visibility: visible" >Space</span>
   </li>
   <li class="darkerli" id = "param layer 0.2">
     <a>
@@ -121,18 +121,18 @@ a.dispatchEvent(e);
            <span>0</span>
            <input id="sliderNSpace" type="range" min="0" max="100000" oninput="sliderNSpaceV.value=rangeInput.value" value="0" step="any"/>
            <span>100k</span>
-           <input id="sliderNSpaceV" type="number" value= "1" min="0" max="100000" oninput="sliderNSpace.value=sliderNSpaceV.value" 
+           <input id="sliderNSpaceV" type="number" value= "1" min="0" max="100000" oninput="sliderNSpace.value=sliderNSpaceV.value"
            style="border: 0; text-align: center; background-color: #ecebeb;"/>
          </div>
        </form>
        </span>
     </a>
-  </li>  
+  </li>
 
   <!--space Multilayer-->
-  <li class="darkerli" id = "param layer 1" style="visibility: hidden; display: none;">                        
+  <li class="darkerli" id = "param layer 1" style="visibility: hidden; display: none;">
       <i class="fa fa-lightbulb-o fa-lg"></i>
-      <span class="nav-text"  style="text-align: center;">Horizontal space</span>            
+      <span class="nav-text"  style="text-align: center;">Horizontal space</span>
   </li>
   <li class="darkerli" style="visibility: hidden; display: none;" id = "param layer 2">
     <a>
@@ -143,25 +143,25 @@ a.dispatchEvent(e);
            <span>0</span>
            <input id="sliderNSpaceH" type="range" min="0" max="100000" oninput="sliderNSpaceV.value=rangeInput.value" value="0" step="any"/>
            <span>100k</span>
-           <input id="sliderNSpaceVH" type="number" value= "1" min="0" max="100000" oninput="sliderNSpace.value=sliderNSpaceV.value" 
+           <input id="sliderNSpaceVH" type="number" value= "1" min="0" max="100000" oninput="sliderNSpace.value=sliderNSpaceV.value"
            style="border: 0; text-align: center; background-color: #ecebeb;"/>
          </div>
        </form>
        </span>
     </a>
   </li>
- 
+
 
         <!--Nodes-->
-        <li class="darkerlishadow">                        
+        <li class="darkerlishadow">
           <i class="fa fa-lightbulb-o fa-lg"></i>
-          <span class="nav-text"><b>Nodes</b></span>            
+          <span class="nav-text"><b>Nodes</b></span>
         </li>
 
-      <!--Size-->  
-      <li class="darkerli">            
+      <!--Size-->
+      <li class="darkerli">
         <i class="fa fa-lightbulb-o fa-lg"></i>
-        <span class="nav-text" style="text-align: center;">Size</span>            
+        <span class="nav-text" style="text-align: center;">Size</span>
       </li>
       <li class="darkerli">
         <a>
@@ -178,10 +178,10 @@ a.dispatchEvent(e);
            </form>
           </span>
         </a>
-      </li>     
+      </li>
 
-      <!--width-->  
-      <li class="darkerli">            
+      <!--width-->
+      <li class="darkerli">
         <i class="fa fa-lightbulb-o fa-lg"></i>
         <span class="nav-text" style="text-align: center;">Border width</span>
       </li>
@@ -194,16 +194,16 @@ a.dispatchEvent(e);
                  <span>0</span>
                  <input id="sliderNWidth" type="range" min="0" max="100000" oninput="sliderNWidthV.value=rangeInput.value" value="0" step="any"/>
                  <span>100k</span>
-                 <input id="sliderNWidthV" type="number" value= "0" min="0" max="100000" oninput="sliderNWidth.value=sliderNWidthV.value" 
+                 <input id="sliderNWidthV" type="number" value= "0" min="0" max="100000" oninput="sliderNWidth.value=sliderNWidthV.value"
                  style="border: 0; text-align: center; background-color: #ecebeb;"/>
                </div>
              </form>
             </span>
           </a>
-        </li>  
+        </li>
 
-      <!--Label size-->  
-      <li class="darkerli">            
+      <!--Label size-->
+      <li class="darkerli">
         <i class="fa fa-lightbulb-o fa-lg"></i>
         <span class="nav-text" style="text-align: center;">Label size</span>
       </li>
@@ -216,23 +216,23 @@ a.dispatchEvent(e);
                <span>0</span>
                <input id="sliderLab" type="range" min="0" max="100000" oninput="sliderLabV.value=rangeInput.value" value="0" step="any"/>
                <span>100k</span>
-               <input id="sliderLabV" type="number" value= "0" min="0" max="100000" oninput="sliderLab.value=sliderLabV.value" 
+               <input id="sliderLabV" type="number" value= "0" min="0" max="100000" oninput="sliderLab.value=sliderLabV.value"
                style="border: 0; text-align: center; background-color: #ecebeb;"/>
              </div>
            </form>
           </span>
         </a>
-      </li>  
+      </li>
 
 
 
-        <!--Links-->       
+        <!--Links-->
         <li class="darkerlishadow">
           <i class="fa fa-lightbulb-o fa-lg"></i>
           <span class="nav-text"><b>Links</b></span>
         </li>
 
-        <!--width-->  
+        <!--width-->
         <li class="darkerli">
           <i class="fa fa-lightbulb-o fa-lg"></i>
           <span class="nav-text"  style="text-align: center;">Width</span>
@@ -246,18 +246,18 @@ a.dispatchEvent(e);
                  <span>0</span>
                  <input id="sliderLWidth" type="range" min="0" max="100000" oninput="sliderLWidthV.value=rangeInput.value" value="1" step="any"/>
                  <span>100k</span>
-                 <input id="sliderLWidthV" type="number" value= "1" min="0" max="100000" oninput="sliderLWidth.value=sliderLWidthV.value" 
+                 <input id="sliderLWidthV" type="number" value= "1" min="0" max="100000" oninput="sliderLWidth.value=sliderLWidthV.value"
                  style="border: 0; text-align: center; background-color: #ecebeb;"/>
                </div>
              </form>
-            </span>          
+            </span>
           </a>
-        </li>  
+        </li>
 
         <!--opacity-->
         <li class="darkerli">
           <i class="fa fa-lightbulb-o fa-lg"></i>
-          <span class="nav-text"  style="text-align: center;">Opacity</span>            
+          <span class="nav-text"  style="text-align: center;">Opacity</span>
         </li>
         <li class="darkerli">
           <a>
@@ -268,19 +268,19 @@ a.dispatchEvent(e);
                  <span>0</span>
                  <input id="sliderLOpacity" type="range" min="0" max="1" oninput="sliderLOpacityV.value=rangeInput.value" value="0.5" step="any"/>
                  <span>1</span>
-                 <input id="sliderLOpacityV" type="number" value= "0.5" min="0" max="1" oninput="sliderLOpacity.value=sliderLOpacityV.value" 
+                 <input id="sliderLOpacityV" type="number" value= "0.5" min="0" max="1" oninput="sliderLOpacity.value=sliderLOpacityV.value"
                  style="border: 0; text-align: center; background-color: #ecebeb;"/>
                </div>
              </form>
-            </span>     
+            </span>
           </a>
-        </li>  
+        </li>
 
 
         <!--Link curves-->
         <li class="darkerli">
           <i class="fa fa-lightbulb-o fa-lg"></i>
-          <span class="nav-text"  style="text-align: center;">Curves</span>            
+          <span class="nav-text"  style="text-align: center;">Curves</span>
         </li>
         <li class="darkerlishadowdown">
           <a>
@@ -291,25 +291,25 @@ a.dispatchEvent(e);
                  <span>0</span>
                  <input id="sliderLCurve" type="range" min="0" max="2" oninput="sliderLCurveV.value=rangeInput.value" value="0.5" step="any"/>
                  <span>2</span>
-                 <input id="sliderLCurveV" type="number" value= "0.5" min="0" max="2" oninput="sliderLCurve.value=sliderLCurveV.value" 
+                 <input id="sliderLCurveV" type="number" value= "0.5" min="0" max="2" oninput="sliderLCurve.value=sliderLCurveV.value"
                  style="border: 0; text-align: center; background-color: #ecebeb;"/>
                </div>
              </form>
-            </span>     
+            </span>
           </a>
-        </li>  
-        <li style="height: 1%;"></li>  
+        </li>
+        <li style="height: 1%;"></li>
 
         <!--Save network-->
 <li>
   <a href="javascript:download()">
-    <img class="fa icon-lg" src="save.png" style="width: 50%;"/>   
+    <img class="fa icon-lg" src="save.png" style="width: 50%;"/>
     <span class="nav-text"><b>Save network</b></span>
   </a>
 </li>
     </nav>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" width='100%' height='100%' id = 'net'></svg>
+
+  <svg xmlns="https://www.w3.org/2000/svg/" width='100%' height='100%' id = 'net'></svg>
 </body>
 
 <!-- D3 function for network-->
@@ -331,7 +331,7 @@ a.dispatchEvent(e);
     var margin = {top: 20, right: 20, bottom: 20, left: 20},
     width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
     height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-    
+
     var svg = d3.select('svg')
                 .call(d3.zoom().scaleExtent([1/1000, 8]).on('zoom', zoomed))
                 .attr('viewBox', '0 0 ' + width + ' ' + height )
@@ -365,7 +365,7 @@ a.dispatchEvent(e);
             enabled: false,
             strength: 0.1,
             x: .5
-        },              
+        },
         forceY: {
             enabled: false,
             strength: .1,
@@ -386,13 +386,13 @@ a.dispatchEvent(e);
                             .distanceMax(forceProperties.charge.distanceMax)
                             .distanceMin(forceProperties.charge.distanceMin)) // making elements attract or repel one another
 
-        
+
         .force('collide', d3.forceCollide()
                 .radius(function(d) { return forceProperties.collide.radius; })
                 .strength(forceProperties.collide.strength )
                 .iterations(forceProperties.collide.iterations)
               )
-        
+
         .force('link', d3.forceLink(link)
                         .id(function(d) { return d.id; })
                         .distance(function(d) { return  forceProperties.link.distance; })
@@ -402,12 +402,12 @@ a.dispatchEvent(e);
         .force('y', d3.forceY().y(function(d) { return d.size;}))
 
         .on('tick', ticked);
-    
+
     var link = svg.selectAll('.link'),
         node = svg.selectAll('.node');
-    
+
       simulation.nodes(graph.nodes);
-      simulation.force('link').links(graph.links);         
+      simulation.force('link').links(graph.links);
 
 
   // Links -----------------------------------------------
@@ -422,22 +422,22 @@ a.dispatchEvent(e);
           .style('stroke-width', function(d) { return d.weigth; })
           .style('stroke', function(d) { return d.colorL; })
           .style('fill', 'none') // Curve
-          
-  
+
+
   // Nodes -----------------------------------------------
       node = node
         .data(graph.nodes)
         .enter().append('path')
           .attr('class', 'node')
-          .attr("d", d3.symbol()                   
+          .attr("d", d3.symbol()
             .type(function(d,i) { return d3.symbols[d.shape]
             })
-            .size(function(d){return d.size * 100;}) 
+            .size(function(d){return d.size * 100;})
             )
           .attr('stroke', function(d) { return d.strokeCol; })
           .attr('stroke-width', function(d) { return d.strokeW; })
           .style('fill', function(d) { return d.color; })
-          .style('stroke-opacity', function(d) { return d.size; })         
+          .style('stroke-opacity', function(d) { return d.size; })
           .on("click", releasenode)
           .on('mouseover', focus)
       .on('mouseover.tooltip', function(d) {
@@ -463,9 +463,9 @@ a.dispatchEvent(e);
                       .on('start', dragstarted)
                       .on('drag', dragged)
                       .on('end', dragended))
-                
+
                 ;
-              
+
   // Label ---------------------------------------
   var texts = svg.selectAll('text.label')
               .data(graph.nodes)
@@ -483,7 +483,7 @@ a.dispatchEvent(e);
   // Functions------------------
 var Layout = 'Force'
 var dist = 500
-  function ticked(size) {    
+  function ticked(size) {
     graph.nodes.sort(function(x, y){
       return d3.ascending(x.size, y.size);
       })
@@ -493,13 +493,13 @@ var dist = 500
         parts = (2*Math.PI)/graph.nodes.length
         d.x =  width/2 + Math.sin(i*parts)*dist;
         d.y = height/2 + Math.cos(i*parts)*dist;
-        })    
+        })
       }
     if(Layout == 'Linear'){
         graph.nodes.forEach(function(d, i) {
           d.x = i*dist/5 + d.size;
-          d.y = height/2; 
-        })      
+          d.y = height/2;
+        })
       }
 
     if(Layout == "Multilayer"){
@@ -514,9 +514,9 @@ var dist = 500
       if(Layout == "Force2"){
          location.reload();
       }
-      
 
-      // Curve 
+
+      // Curve
       link.attr('d', function(d) {
         var dx = d.target.x - d.source.x,
             dy = d.target.y - d.source.y,
@@ -527,7 +527,7 @@ var dist = 500
       node.attr('transform', function(d) { return 'translate('+d.x+','+d.y+')'; });
 
       texts.attr('transform', function(d) { return 'translate('+d.x+','+d.y+')'; });
-  } 
+  }
 
 
     function dragstarted(d) {
@@ -606,59 +606,59 @@ var dist = 500
         simulation.force('charge', d3.forceManyBody()
                            .strength(function(d) { return forceProperties.charge.strength*size; })
                            .distanceMax(forceProperties.charge.distanceMax)
-                           .distanceMin(forceProperties.charge.distanceMin)) 
+                           .distanceMin(forceProperties.charge.distanceMin))
      simulation.alpha(0.5).restart();
       }
       if(Layout == 'Linear'){
         var selectedLayout = d3.select(this).property("value")
-        ticked(dist = size) 
-      } 
+        ticked(dist = size)
+      }
       if(Layout == 'Circle'){
         var selectedLayout = d3.select(this).property("value")
-        ticked(dist = size) 
-      }   
+        ticked(dist = size)
+      }
       if(Layout == 'Multilayer'){
-        
+
         simulation.force('link', d3.forceLink(link)
                         .strength(function(d) { return 0; })
         )
         .force('y', d3.forceY().y(function(d) { return d.y * size; }))
-           
+
         simulation.alpha(0.5).restart();
-      }                      
+      }
     }
 
     d3.select("#sliderNSpace").on("change", function(d){
               selectedValue = this.value
-              changeNodeSpace(selectedValue)                    
+              changeNodeSpace(selectedValue)
     })
 
     d3.select("#sliderNSpaceV").on("input", function(d){
               selectedValue = this.value
-              changeNodeSpace(selectedValue)                    
+              changeNodeSpace(selectedValue)
     })
 
     function changeNodeSpaceH(size) {
       if(Layout == 'Multilayer'){
-        
+
         simulation.force('link', d3.forceLink(link)
                         .strength(function(d) { return 0; })
         )
-        .force('X', d3.forceX().x(function(d) { return d.x * size; }))                   
+        .force('X', d3.forceX().x(function(d) { return d.x * size; }))
         simulation.alpha(0.5).restart();
-      }                      
+      }
     }
 
     d3.select("#sliderNSpaceH").on("change", function(d){
               selectedValue = this.value
-              changeNodeSpaceH(selectedValue)                    
+              changeNodeSpaceH(selectedValue)
     })
 
     d3.select("#sliderNSpaceVH").on("input", function(d){
               selectedValue = this.value
-              changeNodeSpaceH(selectedValue)                    
+              changeNodeSpaceH(selectedValue)
     })
-    
+
 
     /*Node Size------------------------------------------------------------------------*/
     function changeSize(size) {
@@ -672,7 +672,7 @@ var dist = 500
     })
     d3.select("#sliderSizeV").on("input", function(d){
               selectedValue = this.value
-              changeSize(selectedValue)                    
+              changeSize(selectedValue)
     })
     /*Node Width------------------------------------------------------------------------*/
     function changeNwidth(size) {node.attr('stroke-width', function(d) { return d.strokeW * size; })}
@@ -683,7 +683,7 @@ var dist = 500
     })
     d3.select("#sliderNWidthV").on("input", function(d){
               selectedValue = this.value
-              changeNwidth(selectedValue)                    
+              changeNwidth(selectedValue)
     })
     /*Node opacity------------------------------------------------------------------------*/
     function changeNop(size) {node.style('stroke-opacity', function(d) { return d.size * size; })}
@@ -694,7 +694,7 @@ var dist = 500
     })
     d3.select("#sliderNopV").on("input", function(d){
               selectedValue = this.value
-              changeNop(selectedValue)                    
+              changeNop(selectedValue)
     })
     /*Label size------------------------------------------------------------------------*/
     function changeLabelSize(size) {texts.style("font-size",function(d) {  return d.size * size;  })}
@@ -705,7 +705,7 @@ var dist = 500
     })
     d3.select("#sliderLabV").on("input", function(d){
               selectedValue = this.value
-              changeLabelSize(selectedValue)                    
+              changeLabelSize(selectedValue)
     })
     /*Links Width ------------------------------------------------------------------------*/
     function changeLwidth(size) {link.style('stroke-width', function(d) { return d.weigth * size; })}
@@ -716,7 +716,7 @@ var dist = 500
     })
     d3.select("#sliderLWidthV").on("input", function(d){
               selectedValue = this.value
-              changeLwidth(selectedValue)                    
+              changeLwidth(selectedValue)
     })
       /*Links Opacity------------------------------------------------------------------------*/
       function changeLOpacity(size) {
@@ -729,7 +729,7 @@ var dist = 500
       })
       d3.select("#sliderLOpacityV").on("input", function(d){
               selectedValue = this.value
-              changeLOpacity(selectedValue)                    
+              changeLOpacity(selectedValue)
     })
       /*Links curves------------------------------------------------------------------------*/
       function changeLCurve(size) {
@@ -753,11 +753,11 @@ var dist = 500
 
       d3.select("#sliderLCurve").on("change", function(d){
                 selectedValue = this.value
-                changeLCurve(selectedValue)                     
+                changeLCurve(selectedValue)
       })
       d3.select("#sliderLCurveV").on("input", function(d){
               selectedValue = this.value
-              changeLCurve(selectedValue)                    
+              changeLCurve(selectedValue)
     })
       /*Change Layouts------------------------------------------------------------------------*/
       // Create data = list of groups
@@ -766,7 +766,7 @@ var dist = 500
       // Initialize the button
       var dropdownButton = d3.select("#dataviz_builtWithD3")
           .append('select')
-  
+
       // add the options to the button
       dropdownButton // Add a button
         .selectAll('myOptions') // Next 4 lines add 6 options = 6 colors
@@ -778,14 +778,14 @@ var dist = 500
 
         // When the button is changed, run the updateChart function
       dropdownButton.on("change", function(d) {
-      
+
       // recover the option that has been chosen
       var selectedLayout = d3.select(this).property("value")
-      
+
       // run the updateChart function with this selected option
           if(selectedLayout == 'Circle'){Layout = 'Circle';simulation.alpha(0.5).restart();}
           if(selectedLayout == 'Linear'){Layout = 'Linear';simulation.alpha(0.5).restart();}
           if(selectedLayout == 'Force'){Layout = 'Force2';simulation.alpha(0.5).restart();}
           if(selectedLayout == 'Multilayer'){Layout = 'Multilayer';simulation.alpha(0.5).restart();}
-      
+
       })

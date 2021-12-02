@@ -19,6 +19,9 @@ a data frame representing an edge list.
 \description{
 Converts a square adjacency matrix into a data frame with three columns representing an edge list. Columns are: actor, receiver and weight.
 }
+\details{
+This function convert a matrix into an edgelist.
+}
 \author{
 Sebastian Sosa
 }

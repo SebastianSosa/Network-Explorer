@@ -16,9 +16,12 @@ colorize(df, col.att, color, new.col.name)
 \item{new.col.name}{a string indicating the gradient column name added to argument df}
 }
 \value{
-argument df with an addiditional column corresponding to the gradient column based on argument att.
+a data frame.
 }
 \description{
 Add a new column to a data frame of gradient color based on a specific column of the data frame
+}
+\details{
+argument df with an additional column corresponding to the gradient column based on argument att.
 }
 \keyword{internal}

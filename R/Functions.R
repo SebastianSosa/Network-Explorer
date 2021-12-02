@@ -401,9 +401,18 @@ vis.net <- function(df, m,
 
   # Exporting data to html file -----------------
   # Create a temporary directory
-  tempdir <- paste(system.file(package = "NetExplorer"),"/","www", sep = "")
+  tempdir <- tempfile()
+  dir.create(tempdir)
+
+  # Get files from package
+  libDir <- paste(system.file(package = "NetExplorer"),"/","www", sep = "")
+  list_of_files <- list.files(path = libDir)
+
+  # Copy them to the temporary directory
+  file.copy(file.path(libDir,list_of_files), tempdir)
   tmpFile <- file.path(tempdir,  'patron1.txt')
   file.copy(tmpFile, paste0(tempdir,"/NetExplorer.html"), overwrite = TRUE)
+
   tmpFile <- file.path(tempdir,  'NetExplorer.html')
   cat(paste0('\n','\'',noquote('id : '), '\'',noquote('+ d.id ')),file = tmpFile, append = TRUE)
   if(!is.na(d[[2]][2])){

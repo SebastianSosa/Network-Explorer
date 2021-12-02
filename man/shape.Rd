@@ -11,7 +11,13 @@ shape(vec, char)
 
 \item{char}{a character vector}
 }
+\value{
+a numeric vector.
+}
 \description{
 Specify shapes according to a column in a data frame
+}
+\details{
+Converts a character vector into a numeric vector.
 }
 \keyword{internal}
