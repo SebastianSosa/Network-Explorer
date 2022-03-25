@@ -1,25 +1,21 @@
 #  Network-Explorer
-Network explorer (NetExplorer) is a free open R package to visualize and explore networks based on d3js library.NetExplorer brings:
+Network explorer (NetExplorer) is a free open R package available on CRAN[https://cran.r-project.org/web/packages/NetExplorer/index.html] to visualize and explore networks based on d3js library.NetExplorer brings:
 
-      1. Graphical user interface
-      2. Circular, linear, multilayer and force Layout
-      3. Network live exploration
-      4. SVG exportation
+      1. A graphical user interface.
+      2. The possibility of customizing node size, node colour, node shape, node stroke colour, node stroke width.          This way, it allows a data visualization through 5 axes.
+      3. Multiple layout possibilities: circular, linear, multilayer and force layout
+      4. Network live exploration
+      5. SVG exportation allowing high resolution images
 
 <img src="https://github.com/SebastianSosa/Network-Explorer/blob/main/inst/www/logo.jpg" alt="alt text" width="20%" height="20%"> 
 
 <i><b>Author</b>: [Sebastian Sosa](https://scholar.google.fr/citations?user=R8MskkwAAAAJ&hl=fr&authuser=1)
 
   # Installation of version in development 
-    1. Install R 4.0.0 at least
-    2. For : 
-         a. Windows users, install Rtools at https://cran.r-project.org/bin/windows/Rtools/
-         b. Mac users, install Xcode from the Mac App Store.
-         c. Linux users, install a compiler and various development libraries (details vary across different flavors of Linux).
-    
-    3. Install R package devtool with the following command: install.packages("devtools")
-    
-    4. Install ANTs with the following command: devtools::install_github("SebastianSosa/Network-Explorer")
+    On R enter the following command : library("NetExplorer")
 
  # Example
   <img src="https://github.com/SebastianSosa/Network-Explorer/blob/main/Example.png" alt="alt text" width="100%" height="100%"> 
+      
+ # Tutorial 
+   https://www.youtube.com/watch?v=IcFTZWCTO_s
