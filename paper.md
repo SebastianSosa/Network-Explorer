@@ -4,7 +4,8 @@ tags:
   - R
   - Graph Theory
   - Network visualisation and exploration
-authors: "Sebastian sosa"
+authors: 
+  - name Sebastian Sosa
 date: "25/03/2022"
 output: pdf_document
 ---
