@@ -6,10 +6,10 @@ tags:
   - Network visualisation and exploration
 authors: 
   - name: Sebastian Sosa
-    affiliation: "1"
+  - affiliation: "1"
 affiliations:
   - name: Independent Researcher, France
-    index: 1
+  - index: 1
   date: "25/03/2022"
 output: pdf_document
 ---
