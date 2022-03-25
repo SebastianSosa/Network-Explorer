@@ -24,8 +24,8 @@ A tutorial is available at : https://www.youtube.com/watch?v=IcFTZWCTO_s
 In combination with other R packages focusing on network analysis such as igraph (Csardi & Nepusz, 2006; Sosa et al., 2020) and ANTs, Network Explorer offers an ecosystem allowing both the exploration and analysis of networks.
 
 # References
-Csardi, G., & Nepusz, T. (2006). The igraph software package for complex network research. InterJournal, Complex Systems, 1695, 38.
-Hanneman, R. A., & Riddle, M. (2005). Introduction to social network methods. University of California Riverside.
-Sosa, S., Puga-Gonzalez, I., Hu, F., Pansanel, J., Xie, X., & Sueur, C. (2020). A multilevel statistical toolkit to study animal social networks: the Animal Network Toolkit Software (ANTs) R package. Scientific Reports, 10(1), 12507. https://doi.org/10.1038/s41598-020-69265-8
-Thurner, S., Hanel, R., & Klimek, P. (2018). Introduction to the theory of complex systems. Oxford University Press.
+- Csardi, G., & Nepusz, T. (2006). The igraph software package for complex network research. InterJournal, Complex Systems, 1695, 38.
+- Hanneman, R. A., & Riddle, M. (2005). Introduction to social network methods. University of California Riverside.
+- Sosa, S., Puga-Gonzalez, I., Hu, F., Pansanel, J., Xie, X., & Sueur, C. (2020). A multilevel statistical toolkit to study animal social networks: the Animal Network Toolkit Software (ANTs) R package. Scientific Reports, 10(1), 12507. https://doi.org/10.1038/s41598-020-69265-8
+- Thurner, S., Hanel, R., & Klimek, P. (2018). Introduction to the theory of complex systems. Oxford University Press.
 Wasserman, S., & Faust, K. (1994). Social network analysis: Methods and applications (Vol. 8). Cambridge university press.
