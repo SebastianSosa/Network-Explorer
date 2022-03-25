@@ -8,8 +8,7 @@ authors:
   - name: Sebastian Sosa
 affiliations:
   - name: Independent Researcher, France
-  date: "25/03/2022"
-output: pdf_document
+date: "25/03/2022"
 ---
 
  
